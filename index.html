@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shubham Pathak</title>
+    <title>Shubham Pathak - Viber Coder</title>
     <style>
         :root {
             --primary-color: #000000;
@@ -12,6 +12,7 @@
             --text-color: #333333;
             --accent-color: #000000;
             --section-spacing: 4rem;
+            --hover-color: #f5f5f5;
         }
 
         * {
@@ -101,8 +102,18 @@
 
         .project-card {
             margin-bottom: 2rem;
-            padding-bottom: 2rem;
+            padding: 1.5rem;
             border-bottom: 1px solid #eee;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            color: inherit;
+        }
+
+        .project-card:hover {
+            background-color: var(--hover-color);
+            transform: translateX(5px);
         }
 
         .project-card:last-child {
@@ -123,6 +134,15 @@
         .tech-stack {
             font-size: 0.9rem;
             color: var(--secondary-color);
+        }
+
+        .project-status {
+            display: inline-block;
+            font-size: 0.8rem;
+            padding: 0.2rem 0.5rem;
+            background-color: #eee;
+            border-radius: 3px;
+            margin-top: 0.5rem;
         }
 
         .social-links {
@@ -150,7 +170,7 @@
 <body>
     <header>
         <h1>Shubham Pathak</h1>
-        <p class="subtitle">Data Engineer & Developer</p>
+        <p class="subtitle">Viber Coder & Full-Stack Developer</p>
         <div class="nav-links">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
@@ -171,23 +191,23 @@
                 </ul>
             </div>
             <div class="about-section">
-                <h3>Why Data Engineering?</h3>
+                <h3>Why Coding?</h3>
                 <ul>
-                    <li>Passionate about understanding data's journey from production to utilization</li>
-                    <li>Excited about AI and its potential</li>
-                    <li>Recognize the critical role of quality data in model success</li>
-                    <li>Career growth opportunities in Data Engineering</li>
+                    <li>Passionate about building innovative solutions</li>
+                    <li>Love creating seamless user experiences</li>
+                    <li>Excited about full-stack development</li>
+                    <li>Thrive in dynamic, fast-paced environments</li>
                 </ul>
             </div>
             <div class="about-section">
                 <h3>Skills & Expertise</h3>
                 <ul>
-                    <li>Data Engineering & ETL Processes</li>
-                    <li>AWS Cloud Services (Lambda, S3, RDS)</li>
-                    <li>Python Development</li>
-                    <li>Real-time Data Streaming</li>
-                    <li>Database Management</li>
+                    <li>Full-Stack Development</li>
+                    <li>Python & JavaScript</li>
+                    <li>React & Modern Frontend</li>
                     <li>API Development</li>
+                    <li>Cloud Services (AWS)</li>
+                    <li>Database Management</li>
                 </ul>
             </div>
         </div>
@@ -195,30 +215,30 @@
 
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project-card">
+        <a href="http://www.assistsdev.com" class="project-card" target="_blank">
             <h4>Assist - Contact Center Automation</h4>
             <p>A platform designed to streamline contact center operations through workflow automation.</p>
             <p class="tech-stack">Technologies: Python, Flask, React, PostgreSQL</p>
-            <p><em>Status: Under Development</em></p>
-        </div>
+            <span class="project-status">Under Development</span>
+        </a>
 
-        <div class="project-card">
+        <a href="https://github.com/shuepathak/weather-data-collector" class="project-card" target="_blank">
             <h4>Weather Data Collector (AWS Batch Streaming)</h4>
             <p>Serverless application that automatically fetches, processes, and stores weather data using AWS services.</p>
             <p class="tech-stack">Technologies: AWS Lambda, S3, RDS PostgreSQL, Python</p>
-        </div>
+        </a>
 
-        <div class="project-card">
+        <a href="https://github.com/shuepathak/realtimeweather" class="project-card" target="_blank">
             <h4>Real-Time Weather Streaming (Local)</h4>
             <p>Flask-based weather data streaming service using Server-Sent Events (SSE).</p>
             <p class="tech-stack">Technologies: Flask, SSE, Weather API, Python</p>
-        </div>
+        </a>
 
-        <div class="project-card">
+        <a href="https://github.com/shuepathak/todo" class="project-card" target="_blank">
             <h4>Task Management System</h4>
             <p>Python-based command-line application for task management.</p>
             <p class="tech-stack">Technologies: Python, SQLite</p>
-        </div>
+        </a>
     </section>
 
     <section id="contact">
@@ -230,4 +250,4 @@
         </div>
     </section>
 </body>
-</html>
+</html> 
