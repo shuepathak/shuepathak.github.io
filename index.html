@@ -3,87 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Data Engineering Journey</title>
+    <title>Shubham Pathak</title>
     <style>
+        :root {
+            --primary-color: #000000;
+            --secondary-color: #666666;
+            --background-color: #ffffff;
+            --text-color: #333333;
+            --accent-color: #000000;
+            --section-spacing: 4rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: var(--text-color);
+            background-color: var(--background-color);
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #FFE4E1; /* Light pink background */
+            padding: 2rem;
         }
-        h1, h2, h3 {
-            color: #2c3e50;
+
+        header {
+            margin-bottom: var(--section-spacing);
+            padding-top: 2rem;
         }
-        a {
-            color: #3498db;
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+        }
+
+        section {
+            margin-bottom: var(--section-spacing);
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--secondary-color);
             text-decoration: none;
+            font-size: 0.9rem;
         }
-        a:hover {
-            text-decoration: underline;
+
+        .nav-links a:hover {
+            color: var(--primary-color);
         }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .about-section {
+            margin-bottom: 2rem;
+        }
+
+        .about-section h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: var(--primary-color);
+        }
+
         ul {
-            list-style-type: disc;
-            padding-left: 20px;
+            list-style: none;
+            padding: 0;
         }
+
         li {
-            margin-bottom: 10px;
+            margin-bottom: 0.5rem;
+            color: var(--secondary-color);
+        }
+
+        .project-card {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .project-card:last-child {
+            border-bottom: none;
+        }
+
+        .project-card h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .project-card p {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .tech-stack {
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .social-links a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Welcome data lovers ❤️ ❤️ <h1>
-    <h2>I will write the inauguration code here, print "Hello world"</h2>
-   <hr> 
-    <p>Thank you for visiting! This is my page where I am going to talk about my data engineering journey I am excited to share about my learning and the type of projects I will be doing. This is my portfolio page.
-</p>
-    
-    <h2>Brief about me</h2>
-    <p>My name is Shubham and I love Data and the various use cases attributed to just "data". As Gavin Belson says, there will be Armageddon soon, (Silicon Valley reference) I am motivated to learn how data can be stored, supplied and utilised in the best way possible!</p>
-    
-    <h3>Who I am right now:</h3>
-    <p>I am 23, based out of Pune IN. I work at Barclays. I am also a BS in Data science and applications student at IIT Madras. I have close to 5 years of work experience in Operations as I started working right after college.</p>
-    
-    <h3>Why am I doing this:</h3>
-    <p>Fairly and simply because I want to understand the use case of the data I am producing. My job revolves around producing data, I want to join the data's journey from being produced to being stored to being called useful. As geeky as it sounds, data excites me and I know with the coming dawn of AI and its amazing new course, a good data set can make or break the model. (DEs get paid a lot too!!)</p>
-    
-    <h3>How?</h3>
+    <header>
+        <h1>Shubham Pathak</h1>
+        <p class="subtitle">Data Engineer & Developer</p>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
 
-    <p> By working on a lot of projects! I will share URLs for all the topics I will pick up </p>
-        
-    <p>This is my blog post/ portfolio of the projects, I will write about what I faced issues with, how I managed to do x and what sources I took. This is my diary but for projects, I wish to show everyone :) I understand that the page that I have just made (or created a repo) will look very unorganised but please bear with me, this is a work in progress.
- </p>
-	    
-<hr>
+    <section id="about">
+        <h2>About</h2>
+        <div class="about-content">
+            <div class="about-section">
+                <h3>Current Status</h3>
+                <ul>
+                    <li>23 years old, based in Pune, India</li>
+                    <li>Working at Barclays</li>
+                    <li>BS in Data Science and Applications student at IIT Madras</li>
+                    <li>5 years of experience in Operations</li>
+                </ul>
+            </div>
+            <div class="about-section">
+                <h3>Why Data Engineering?</h3>
+                <ul>
+                    <li>Passionate about understanding data's journey from production to utilization</li>
+                    <li>Excited about AI and its potential</li>
+                    <li>Recognize the critical role of quality data in model success</li>
+                    <li>Career growth opportunities in Data Engineering</li>
+                </ul>
+            </div>
+            <div class="about-section">
+                <h3>Skills & Expertise</h3>
+                <ul>
+                    <li>Data Engineering & ETL Processes</li>
+                    <li>AWS Cloud Services (Lambda, S3, RDS)</li>
+                    <li>Python Development</li>
+                    <li>Real-time Data Streaming</li>
+                    <li>Database Management</li>
+                    <li>API Development</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-<!-- New project highlight section -->
-    <div class="project-highlight">
-        <h2>My Projects</h2>
-        <h4><a href="http://www.assistsdev.com">assist</a></h4>
-        <p>assist is a platform designed to help contact centres automate their workflow. This project aims to streamline operations and improve efficiency in customer service environments.</p>
-        <p><strong>The site may not respond, as I am building the web-app</strong></p>
-	<h4><a href="https://github.com/shuepathak/weather-data-collector"> Weather Data Collector AWS Batch Streaming</a></h4>
-	    <p>The Weather Data Collector is a serverless application built on AWS that automatically fetches, processes, and stores weather data. The application utilizes AWS Lambda for computation, retrieves data from a public weather API, stores raw data in Amazon S3, and saves processed data in an Amazon RDS PostgreSQL database The frequency is set to x minutes and can be customised.</p>
-	<h4><a href="https://github.com/shuepathak/realtimeweather.git"> Real Time Weather Streaming on Local</a></h4>
-	    <p>This project sets up a simple weather data streaming service using Flask and Server-Sent Events (SSE). It continuously streams real-time weather data fetched from a third-party API. The frequency is set to x seconds to be real-time and can be customised.</p>
-	    <h4><a href="https://github.com/shuepathak/todo"> Task Management System </a></h4> 
-	    <p> This Task Management System is a simple command-line application built in Python. I have written this to brush up my Python basics.</p>
-    </div>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h4>Assist - Contact Center Automation</h4>
+            <p>A platform designed to streamline contact center operations through workflow automation.</p>
+            <p class="tech-stack">Technologies: Python, Flask, React, PostgreSQL</p>
+            <p><em>Status: Under Development</em></p>
+        </div>
 
-<hr>	
-    <p>I am hoping we kindle in this journey, If you like my work and if you have any suggestions do reach out to me in the given below ways:</p>
+        <div class="project-card">
+            <h4>Weather Data Collector (AWS Batch Streaming)</h4>
+            <p>Serverless application that automatically fetches, processes, and stores weather data using AWS services.</p>
+            <p class="tech-stack">Technologies: AWS Lambda, S3, RDS PostgreSQL, Python</p>
+        </div>
 
+        <div class="project-card">
+            <h4>Real-Time Weather Streaming (Local)</h4>
+            <p>Flask-based weather data streaming service using Server-Sent Events (SSE).</p>
+            <p class="tech-stack">Technologies: Flask, SSE, Weather API, Python</p>
+        </div>
 
-	
-    <ul>
-        <li> Linkedin: <a href="https://www.linkedin.com/in/">linkedin.com/in/</a></li>
-        <li> X: <a href="https://x.com/shuepathak">x.com/shuepathak</a></li>
-        <li> Github: <a href="https://github.com/shuepathak">github.com/shuepathak</a></li>
-    </ul>
-    
-    <p>Thank you very much for Visting!</p>
-    <p>- Shubham</p>
+        <div class="project-card">
+            <h4>Task Management System</h4>
+            <p>Python-based command-line application for task management.</p>
+            <p class="tech-stack">Technologies: Python, SQLite</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
+            <a href="https://x.com/shuepathak" target="_blank">Twitter</a>
+            <a href="https://github.com/shuepathak" target="_blank">GitHub</a>
+        </div>
+    </section>
 </body>
 </html>
